@@ -1,2 +1,2 @@
 # LLMCommunicator
-CSharp interface to communicate various LLMs
+CSharp interface to communicate with various LLMs
