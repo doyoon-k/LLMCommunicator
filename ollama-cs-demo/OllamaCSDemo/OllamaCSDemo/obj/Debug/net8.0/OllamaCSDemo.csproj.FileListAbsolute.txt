@@ -1,0 +1,17 @@
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.exe
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.deps.json
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.runtimeconfig.json
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.dll
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.pdb
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.csproj.AssemblyReference.cache
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.GeneratedMSBuildEditorConfig.editorconfig
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.AssemblyInfoInputs.cache
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.AssemblyInfo.cs
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.csproj.CoreCompileInputs.cache
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCS.7E6954AE.Up2Date
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.dll
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\refint\OllamaCSDemo.dll
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.pdb
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.genruntimeconfig.cache
+G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\ref\OllamaCSDemo.dll
