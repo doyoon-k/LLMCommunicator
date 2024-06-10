@@ -1,53 +1,107 @@
 ﻿using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+
 
 namespace OllamaCSDemo
 {
     class OllamaCommunicator
     {
+        private Process ollamaProcess;
         private string model;
-        private string setupPrompt;
-
-        public OllamaCommunicator(string model, string setupPrompt)
+        private string systemPrompt;
+        private bool bRespondInStream = true;
+        private float temperature;
+        public OllamaCommunicator(string model, string setupPrompt,bool bRespondInStream = true, float temperature = 0.7f)
         {
             this.model = model;
-            this.setupPrompt = setupPrompt;
+            this.systemPrompt = setupPrompt;
+            this.bRespondInStream = bRespondInStream;
+            this.temperature = temperature;
+
+            StartOllamaProcess();
+            AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
         }
 
-        public async Task<string> GenerateCompletionAsync(string model, string prompt)
+        ~OllamaCommunicator()
         {
+            StopOllamaProcess();
+        }
+
+        private void StartOllamaProcess()
+        {
+            ollamaProcess = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "ollama",
+                    Arguments = "start",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                }
+            };
+            ollamaProcess.Start();
+        }
+
+        private void StopOllamaProcess()
+        {
+            if (ollamaProcess != null && !ollamaProcess.HasExited)
+            {
+                ollamaProcess.Kill();
+                ollamaProcess.Dispose();
+            }
+        }
+
+        private void OnProcessExit(object sender, EventArgs e)
+        {
+            StopOllamaProcess();
+        }
+
+        public async IAsyncEnumerable<string> GenerateAnswerAsync(string prompt)
+        {
+            if (string.IsNullOrEmpty(prompt)) throw new ArgumentException("Prompt cannot be null or empty", nameof(prompt));
+
             using (HttpClient client = new HttpClient())
             {
                 var requestBody = new
                 {
-                    model = model,
-                    prompt = prompt
+                    model = this.model,
+                    prompt = prompt,
+                    system = this.systemPrompt,
+                    stream = this.bRespondInStream,
+                    options = new
+                    {
+                        temperature = this.temperature
+                    }
                 };
                 var json = JsonConvert.SerializeObject(requestBody);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await client.PostAsync("http://localhost:11434/api/generate", content);
-                response.EnsureSuccessStatusCode();
-
-                string responseBody = await response.Content.ReadAsStringAsync();
-
-                // combine multiple responses into one
-                var responses = responseBody.Split(new[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
-                var finalResponse = new StringBuilder();
-
-                foreach (var res in responses)
+                // Use SendAsync to use HttpCompletionOption
+                var request = new HttpRequestMessage(HttpMethod.Post, "http://localhost:11434/api/generate")
                 {
-                    var jsonResponse = JObject.Parse(res);
-                    finalResponse.Append(jsonResponse["response"].ToString());
+                    Content = content
+                };
+
+                using (var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead))
+                {
+                    response.EnsureSuccessStatusCode();
+                    using (var stream = await response.Content.ReadAsStreamAsync())
+                    using (var reader = new StreamReader(stream))
+                    {
+                        while (!reader.EndOfStream)
+                        {
+                            var line = await reader.ReadLineAsync();
+                            if (!string.IsNullOrWhiteSpace(line))
+                            {
+                                var jsonResponse = JObject.Parse(line);
+                                yield return jsonResponse["response"]?.ToString();
+                            }
+                        }
+                    }
                 }
-
-
-                return finalResponse.ToString();
             }
         }
 

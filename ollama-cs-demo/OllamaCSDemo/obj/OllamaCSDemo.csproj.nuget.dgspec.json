@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\OllamaCSDemo.csproj": {}
+    "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo.csproj": {}
   },
   "projects": {
-    "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\OllamaCSDemo.csproj": {
+    "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\OllamaCSDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo.csproj",
         "projectName": "OllamaCSDemo",
-        "projectPath": "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\OllamaCSDemo.csproj",
-        "packagesPath": "C:\\Users\\dkim\\.nuget\\packages\\",
-        "outputPath": "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\obj\\",
+        "projectPath": "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo.csproj",
+        "packagesPath": "C:\\Users\\Doyoon Kim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dkim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Doyoon Kim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

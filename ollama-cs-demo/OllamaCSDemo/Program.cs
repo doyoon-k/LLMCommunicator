@@ -2,6 +2,7 @@
 using OllamaCSDemo;
 using System;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        OllamaCommunicator ollaCommunicator = new OllamaCommunicator("llama3","You are a virtual assistant who gives me whatever answer I want.");
+        OllamaCommunicator ollaCommunicator = new OllamaCommunicator("llama3","You are a general of a battle field. You are in charge of millions of soldiers and the fate of this country is depending on you.",true);
 
         //get input from user until user types "exit"
         string input = "";
@@ -19,9 +20,10 @@ class Program
             input = Console.ReadLine();
             if (input != "exit")
             {
-                string response = await ollaCommunicator.GenerateCompletionAsync("llama3", input);
-                Console.WriteLine(response);
-                Console.WriteLine();
+                await foreach (string response in ollaCommunicator.GenerateAnswerAsync(input))
+                {
+                    Console.Write(response);
+                }
             }
         }
     }

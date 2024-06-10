@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/tjJfzApDbXd++VFfl/6FtBUzw+nXzkjZds4+5qbFnhgO890JRBUIO+V3sSJ16G4QGQWAfiOTFIrNqK/X+zlzg==",
+  "dgSpecHash": "+GLf7AUfq8E=",
   "success": true,
-  "projectFilePath": "G:\\wkspaces\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo\\OllamaCSDemo.csproj",
+  "projectFilePath": "C:\\Users\\Doyoon Kim\\Documents\\Digipen\\Project_Mars\\LLMCommunicator\\ollama-cs-demo\\OllamaCSDemo\\OllamaCSDemo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dkim\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Doyoon Kim\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

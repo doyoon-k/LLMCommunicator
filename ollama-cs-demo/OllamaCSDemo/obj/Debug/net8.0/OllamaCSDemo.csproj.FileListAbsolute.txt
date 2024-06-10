@@ -15,3 +15,21 @@ G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\refint\Oll
 G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.pdb
 G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.genruntimeconfig.cache
 G:\wkspaces\ollama-cs-demo\OllamaCSDemo\OllamaCSDemo\obj\Debug\net8.0\ref\OllamaCSDemo.dll
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.exe
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.deps.json
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.runtimeconfig.json
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.dll
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\OllamaCSDemo.pdb
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.csproj.AssemblyReference.cache
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.AssemblyInfoInputs.cache
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.AssemblyInfo.cs
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.csproj.CoreCompileInputs.cache
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.sourcelink.json
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCS.7E6954AE.Up2Date
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.dll
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\refint\OllamaCSDemo.dll
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.pdb
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\OllamaCSDemo.genruntimeconfig.cache
+C:\Users\Doyoon Kim\Documents\Digipen\Project_Mars\LLMCommunicator\ollama-cs-demo\OllamaCSDemo\obj\Debug\net8.0\ref\OllamaCSDemo.dll
